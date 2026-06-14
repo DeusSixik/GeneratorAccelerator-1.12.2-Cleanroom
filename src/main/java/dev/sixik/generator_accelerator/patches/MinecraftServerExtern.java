@@ -1,7 +1,7 @@
 package dev.sixik.generator_accelerator.patches;
 
+import dev.sixik.generator_accelerator.patches.exception.NotImplementedException;
 import net.minecraft.server.MinecraftServer;
-import org.apache.commons.lang3.NotImplementedException;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
@@ -11,7 +11,7 @@ public interface MinecraftServerExtern {
     static MinecraftServerExtern get(MinecraftServer server) {
         if(server instanceof MinecraftServerExtern extern)
             return extern;
-        throw new NotImplementedException(server.getClass() + " must be implement 'dev.sixik.generator_accelerator.patches.MinecraftServerExtern'");
+        throw new NotImplementedException(server.getClass(), MinecraftServerExtern.class);
     }
 
     /**

@@ -6,7 +6,9 @@
   "client": [],
   "mixins": [
     "chunk_generation.MixinPlayerChunkMap",
-    "patch.MixinMinecraftServer"
+    "patch.MixinChunkProviderServer",
+    "patch.MixinMinecraftServer",
+    "patch.MixinPlayerChunkMapEntry"
   ],
   "server": [],
   "setSourceFile": true,

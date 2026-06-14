@@ -14,7 +14,12 @@ public final class ChunkGenerationTypes {
         /**
          * Чанк требует чтобы его сгенерировали. (То есть его не существует)
          */
-        GENERATE;
+        GENERATE,
+
+        /**
+         * Если нам нужно просто получить чанк.
+         */
+        NONE;
 
         @Override
         public byte getTypeByte() {
