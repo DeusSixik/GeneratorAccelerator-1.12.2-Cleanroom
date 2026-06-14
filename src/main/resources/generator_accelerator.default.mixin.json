@@ -1,12 +1,14 @@
 {
   "required": true,
-  "package": "com.example.modid.mixin",
+  "package": "dev.sixik.generator_accelerator.mixin",
   "compatibilityLevel": "JAVA_8",
   "target": "@env(DEFAULT)",
   "client": [
     "MinecraftMixin"
   ],
-  "mixins": [],
+  "mixins": [
+    "chunk_generation.MixinPlayerChunkMap"
+  ],
   "server": [],
   "setSourceFile": true,
   "minVersion": "0.8.7"

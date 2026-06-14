@@ -1,11 +1,11 @@
-package com.example.modid;
+package dev.sixik.generator_accelerator;
 
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
-public class ExampleLoadingPlugin implements IFMLLoadingPlugin {
+public class GeneratorAcceleratorLoadingPlugin implements IFMLLoadingPlugin {
     @Override
     public @Nullable String[] getASMTransformerClass() {
         return null;

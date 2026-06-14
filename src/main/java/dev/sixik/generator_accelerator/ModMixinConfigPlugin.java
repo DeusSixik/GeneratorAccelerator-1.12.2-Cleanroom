@@ -1,4 +1,4 @@
-package com.example.modid;
+package dev.sixik.generator_accelerator;
 
 import net.minecraftforge.fml.common.Loader;
 import org.objectweb.asm.tree.ClassNode;

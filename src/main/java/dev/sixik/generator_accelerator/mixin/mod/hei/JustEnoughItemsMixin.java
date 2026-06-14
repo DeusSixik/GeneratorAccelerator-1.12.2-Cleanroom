@@ -1,6 +1,6 @@
-package com.example.modid.mixin.mod.hei;
+package dev.sixik.generator_accelerator.mixin.mod.hei;
 
-import com.example.modid.ExampleMod;
+import dev.sixik.generator_accelerator.GeneratorAccelerator;
 import mezz.jei.JustEnoughItems;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,6 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class JustEnoughItemsMixin {
     @Inject(method = "preInit", at = @At("HEAD"))
     public void print(FMLPreInitializationEvent event, CallbackInfo ci) {
-        ExampleMod.LOGGER.info("Hello world");
+        GeneratorAccelerator.LOGGER.info("Hello world");
     }
 }
