@@ -3,11 +3,10 @@
   "package": "dev.sixik.generator_accelerator.mixin",
   "compatibilityLevel": "JAVA_8",
   "target": "@env(DEFAULT)",
-  "client": [
-    "MinecraftMixin"
-  ],
+  "client": [],
   "mixins": [
-    "chunk_generation.MixinPlayerChunkMap"
+    "chunk_generation.MixinPlayerChunkMap",
+    "patch.MixinMinecraftServer"
   ],
   "server": [],
   "setSourceFile": true,

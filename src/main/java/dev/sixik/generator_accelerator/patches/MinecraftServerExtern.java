@@ -1,0 +1,19 @@
+package dev.sixik.generator_accelerator.patches;
+
+import net.minecraft.server.MinecraftServer;
+import org.apache.commons.lang3.NotImplementedException;
+
+public interface MinecraftServerExtern {
+
+    static MinecraftServerExtern get(MinecraftServer server) {
+        if(server instanceof MinecraftServerExtern extern)
+            return extern;
+        throw new NotImplementedException(server.getClass() + " must be implement 'dev.sixik.generator_accelerator.patches.MinecraftServerExtern'");
+    }
+
+    /**
+     * Проверяет находимся ли мы на главном потоке сервера
+     * @return {@code true} если мы на {@link MinecraftServer#serverThread}
+     */
+    boolean ga$isMainThread();
+}

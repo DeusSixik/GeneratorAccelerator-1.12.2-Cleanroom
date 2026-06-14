@@ -4,9 +4,7 @@
   "plugin": "dev.sixik.generator_accelerator.ModMixinConfigPlugin",
   "compatibilityLevel": "JAVA_8",
   "target": "@env(MOD)",
-  "client": [
-    "hei.JustEnoughItemsMixin"
-  ],
+  "client": [],
   "mixins": [],
   "server": [],
   "setSourceFile": true,
